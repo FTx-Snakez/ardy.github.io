@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(250,246,246);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.h1 {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(152,33,33);
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.letter {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.letter:hover{
+    width: 500px;
+    height: 500px;
+    transition: .3s ease;
+    transition: .3s ease-in-out;
+}
+
+.hearts{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-top: -490px;
+    margin-left: -440px;
+
+}
+
+.letter-open {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    display:block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.ask {
+    font-size: 35px;
+    font-family: "Lobster", serif;
+    color: rgb(152,33,33);
+    position: absolute;
+    top: 34%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    rotate: -10deg;
+}
+
+
+.button {
+    position: absolute;
+    margin-top: -310px;
+    margin-left: 70px;
+    background: #ffffffbc;
+    border: none;
+    padding: 10px;
+    border-radius: 30px ;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    rotate: -10deg;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+.button.hidden {
+    visibility: hidden;
+}
+
+.button-stop{
+    position: absolute;
+    margin-top: -310px;
+    margin-left: 70px;
+    background: #ffffffbc;
+    border: none;
+    padding: 10px;
+    border-radius: 30px ;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    rotate: -10deg;
+    z-index: 5;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.vinyl {
+    position: absolute;
+    height: 200px;
+    width: 140px;
+    top: 38%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    transform-origin: center; /* Ensure it rotates around its center */
+}
+
+/* Add spin animation but only when 'spin' class is applied */
+.vinyl.spin {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
